@@ -1,0 +1,29 @@
+---
+- name: Install wordpress
+  hosts: all
+  tasks:
+    - name: install webserver  Debian
+      when: ansible_os_family == "Debian"
+      package:
+        name: apache2
+        state: absent
+    - name: install webserver  centos
+      when: ansible_os_family == "RedHat"
+      package:
+        name: httpd
+        state: absent
+        
+    - name: Install all packages
+      package:
+        name: "{{ item }}"
+        state: absent
+      with_items:
+        - mysql
+        - mariadb-server
+        - php
+        - php-mysql
+        - php-pdo
+        - php-pear
+        - php-xml
+        - php-gd
+        - php-zlib
