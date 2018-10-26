@@ -2,18 +2,18 @@
 - name: Install wordpress
   hosts: all
   tasks:
-    - name: install webserver  Debian
+    - name: remove webserver  Debian
       when: ansible_os_family == "Debian"
       package:
         name: apache2
         state: absent
-    - name: install webserver  centos
+    - name: remove webserver  centos
       when: ansible_os_family == "RedHat"
       package:
         name: httpd
         state: absent
         
-    - name: Install all packages
+    - name: remove all packages
       package:
         name: "{{ item }}"
         state: absent
