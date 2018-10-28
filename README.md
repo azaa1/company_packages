@@ -3,6 +3,7 @@
 
 fail2ban.yaml
 
+* For the configuration part of the playbook input your IP/CIDR block on lines 48 and 60
 
 THis playbook installs and configures Fail2ban Service on Amazon-Linux and CentOS7 
 
