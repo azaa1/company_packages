@@ -1,4 +1,6 @@
 **** Fail2ban Service ***** 
+
+
 fail2ban.yaml
 THis playbook installs and configures Fail2ban Service on Amazon-Linux and CentOS7 
 The requirement to install Fail2ban service is epel-release repository
