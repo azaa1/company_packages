@@ -45,7 +45,7 @@
         block: |
           [DEFAULT]
           banaction = iptables-multiport
-          ignoreip = 208.59.68.250/24
+          ignoreip =                                 # Enter IP/CIDR block to be ignored
           bantime = 3600
           findtime = 120
           maxretry = 3
@@ -60,7 +60,7 @@
         path: /etc/fail2ban/jail.conf
         block: |
           [DEFAULT]
-          ignoreip = 208.59.68.250/24
+          ignoreip =                                  # Enter the IP/CIDR block to be ignored
           bantime = 3600
           findtime = 120
           maxretry = 3
