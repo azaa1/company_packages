@@ -23,3 +23,4 @@ The configuration:
 2. Allows 2 minutes to login
 3. If failed to login, bans for 1 hour
 4. Ignores company's CIDR block
+
