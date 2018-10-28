@@ -18,6 +18,7 @@ The requirement to install Fail2ban service is epel-release repository
 9. Restarts Fail2ban service on CentOS7 
 
 ** Fail2ban Configuration"
+
 The configuration:
 1. Allows 3 retry
 2. Allows 2 minutes to login
